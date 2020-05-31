@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_purchase"
+        android:icon="@drawable/ic_monetization_on_black_24dp"
+        android:title="Satış"/>
+
+    <item
+        android:id="@+id/nav_profil"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Profil"/>
+</menu>

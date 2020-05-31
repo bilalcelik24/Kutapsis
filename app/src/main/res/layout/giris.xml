@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/txtViewLoginKullaniciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Adı"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <TextView
+        android:id="@+id/txtViewLoginSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Şifre"
+        app:layout_constraintStart_toStartOf="@+id/editLoginKullanici"
+        app:layout_constraintTop_toBottomOf="@+id/editLoginKullanici" />
+
+    <EditText
+        android:id="@+id/editLoginSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtViewLoginSifre"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewLoginSifre" />
+
+    <EditText
+        android:id="@+id/editLoginKullanici"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtViewLoginKullaniciAdi"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewLoginKullaniciAdi" />
+
+    <Button
+        android:id="@+id/bttnLoginGiris"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editLoginSifre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editLoginSifre"
+        app:layout_constraintTop_toBottomOf="@+id/editLoginSifre"
+        app:layout_constraintVertical_bias="0.13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Giriş"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <Button
+        android:id="@+id/bttnLoginKayitOl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button"
+        android:text="Kayıt Ol"
+        app:layout_constraintEnd_toEndOf="@+id/bttnLoginGiris"
+        app:layout_constraintStart_toStartOf="@+id/bttnLoginGiris"
+        app:layout_constraintTop_toBottomOf="@+id/bttnLoginGiris" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".screen.activity.MainActivity">
+
+    <Spinner
+        android:id="@+id/SpinnerHayvanTur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/hayvan_turu"
+
+        app:layout_constraintStart_toStartOf="@+id/txtViewHayvanEkleTur"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewHayvanEkleTur" />
+
+    <TextView
+        android:id="@+id/txtViewHayvanEkleTur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hayvan Türü"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <EditText
+        android:id="@+id/editHayvanEklePara"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@drawable/custom_edittext"
+        app:layout_constraintStart_toStartOf="@+id/txtViewHayvanEklePara"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewHayvanEklePara" />
+
+    <TextView
+        android:id="@+id/txtViewHayvanEklePara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Bir Hisse Parası"
+        app:layout_constraintStart_toStartOf="@+id/SpinnerHayvanTur"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerHayvanTur" />
+
+    <Spinner
+        android:id="@+id/SpinnerHayvanHisse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/hayvan_hisse"
+        app:layout_constraintEnd_toEndOf="@+id/SpinnerHayvanTur"
+        app:layout_constraintStart_toStartOf="@+id/txtViewHayvanEkleHisse"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewHayvanEkleHisse" />
+
+    <TextView
+        android:id="@+id/txtViewHayvanEkleHisse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Hisse Sayısı"
+        app:layout_constraintStart_toStartOf="@+id/editHayvanEklePara"
+        app:layout_constraintTop_toBottomOf="@+id/editHayvanEklePara" />
+
+    <Button
+        android:id="@+id/bttnHayvanEkle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/custom_button"
+        android:text="Ekle"
+        app:layout_constraintEnd_toEndOf="@+id/editHayvanEklePara"
+        app:layout_constraintStart_toStartOf="@+id/SpinnerHayvanHisse"
+        app:layout_constraintTop_toBottomOf="@+id/SpinnerHayvanHisse" />
+</androidx.constraintlayout.widget.ConstraintLayout>

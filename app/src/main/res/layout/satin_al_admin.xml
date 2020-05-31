@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".screen.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/txtSatinAlAdminAd"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="İsim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <EditText
+        android:id="@+id/editSatinAlAdminAd"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtSatinAlAdminAd"
+        app:layout_constraintTop_toBottomOf="@+id/txtSatinAlAdminAd" />
+
+    <TextView
+        android:id="@+id/txtSatinAlAdminSoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Soy İsim"
+        app:layout_constraintStart_toStartOf="@+id/editSatinAlAdminAd"
+        app:layout_constraintTop_toBottomOf="@+id/editSatinAlAdminAd" />
+
+    <EditText
+        android:id="@+id/editSatinAlAdminSoy"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtSatinAlAdminSoy"
+        app:layout_constraintTop_toBottomOf="@+id/txtSatinAlAdminSoy" />
+
+    <TextView
+        android:id="@+id/txtSatinAlAdminAdres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Adres"
+        app:layout_constraintStart_toStartOf="@+id/editSatinAlAdminSoy"
+        app:layout_constraintTop_toBottomOf="@+id/editSatinAlAdminSoy" />
+
+    <EditText
+        android:id="@+id/editSatinAlAdminAdres"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtSatinAlAdminAdres"
+        app:layout_constraintTop_toBottomOf="@+id/txtSatinAlAdminAdres" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Button"
+        android:background="@drawable/custom_button"
+        app:layout_constraintEnd_toEndOf="@+id/editSatinAlAdminAdres"
+        app:layout_constraintStart_toStartOf="@+id/editSatinAlAdminAdres"
+        app:layout_constraintTop_toBottomOf="@+id/editSatinAlAdminAdres" />
+</androidx.constraintlayout.widget.ConstraintLayout>

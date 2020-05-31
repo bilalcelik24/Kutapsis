@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".screen.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/txtViewKayitOlSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+
+        android:layout_marginTop="24dp"
+        android:text="Şifre"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editKayitOlSoy"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitOlSoy" />
+
+    <EditText
+        android:id="@+id/editKayitOlKullanici"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtViewKAyitOlKullanici"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewKAyitOlKullanici" />
+
+    <TextView
+        android:id="@+id/txtViewKAyitOlKullanici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Adı"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:id="@+id/txtViewKayitOlSifreTekrar"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="24dp"
+        android:text="Şifre Tekrar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editKayitOlSifre"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitOlSifre" />
+
+    <EditText
+        android:id="@+id/editKayitOlSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtViewKayitOlSifre"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewKayitOlSifre" />
+
+    <EditText
+        android:id="@+id/editKayitOlSifreTekrar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtViewKayitOlSifreTekrar"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewKayitOlSifreTekrar" />
+
+    <Button
+        android:id="@+id/bttnKayitOlOnay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Onayla"
+        android:background="@drawable/custom_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editKayitOlSifreTekrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editKayitOlSifreTekrar"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitOlSifreTekrar"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/txtViewKayitOlAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="İsim"
+        app:layout_constraintStart_toStartOf="@+id/editKayitOlKullanici"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitOlKullanici" />
+
+    <EditText
+        android:id="@+id/editKayitOlAd"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtViewKayitOlAd"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewKayitOlAd" />
+
+    <TextView
+        android:id="@+id/txtViewKayitOlSoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Soy İsim"
+        app:layout_constraintStart_toStartOf="@+id/editKayitOlAd"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitOlAd" />
+
+    <EditText
+        android:id="@+id/editKayitOlSoy"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtViewKayitOlSoy"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewKayitOlSoy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
